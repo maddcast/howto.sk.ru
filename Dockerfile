@@ -3,7 +3,7 @@ FROM python:3.9.2-alpine3.13 as builder
 RUN pip3 install mkdocs-material
 
 WORKDIR /build
-COPY docs /build
+COPY docs /build/docs
 COPY mkdocs.yml /build
 
 RUN mkdocs build --site-dir /site
