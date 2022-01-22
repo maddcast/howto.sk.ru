@@ -1,0 +1,6 @@
+services:
+  # A Docker web service
+  - type: web
+    name: nginx
+    env: docker
+    healthCheckPath: /
